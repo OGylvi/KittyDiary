@@ -8,31 +8,43 @@
     android:background="@color/colorPrimary"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="215dp"
-        android:layout_height="51dp"
-        android:text="Ой!"
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="221dp"
+        android:layout_height="229dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Жми"
+        android:src="@drawable/kitty"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/kitty" />
+
+    <EditText
+        android:id="@+id/user_data"
+        android:layout_width="237dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Дела"
         android:textColor="@color/white"
-        android:textSize="20sp"
-        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.644" />
+        app:layout_constraintTop_toBottomOf="@+id/imageButton"
+        app:layout_constraintVertical_bias="0.0" />
 
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="229dp"
-        android:layout_height="253dp"
-        android:contentDescription="Жми"
-        android:src="@drawable/kitty"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="330dp"
+        android:layout_height="301dp"
+        android:smoothScrollbar="true"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.201"
-        tools:srcCompat="@drawable/kitty" />
+        app:layout_constraintTop_toBottomOf="@+id/user_data"
+        app:layout_constraintVertical_bias="0.355" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
