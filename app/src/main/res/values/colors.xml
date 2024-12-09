@@ -2,4 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#FF1493</color>        <!-- Основной цвет -->
+    <color name="colorPrimaryDark">#C71585</color>     <!-- Темный цвет -->
+    <color name="colorAccent">#FF69B4</color>          <!-- Акцентный цвет -->
 </resources>
